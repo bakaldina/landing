@@ -6,7 +6,7 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/pt-sans-v8-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/pt-sans-v8-latin_cyrillic-regular.eot'); /* IE9 Compat Modes мм */
   src: local('PT Sans'), local('PTSans-Regular'),
        url('fonts/pt-sans-v8-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('fonts/pt-sans-v8-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
@@ -212,7 +212,7 @@ li.right:last-child {
     margin: 0 auto;
     position: absolute;
     z-index: 1;
-    left: 415px;
+    left: 600px;
     bottom: -220px;
 }
 .block-3 {
