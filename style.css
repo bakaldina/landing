@@ -842,8 +842,9 @@ li.main-menu__list:last-child {
     margin-left: 30px;
 }
 .block-5-left-mobile ul {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -858,12 +859,12 @@ li.main-menu__list:last-child {
     font-size: 13px;
     color: #2b87e2;
     line-height: 20px;
-    margin-bottom: 2px;
     cursor: pointer;
     margin-left: 30px;
+
 }
 .button-3-mobile {
-    margin-left: 0;
+    padding: 0;
 }
 .button-mobile:focus {
     outline: none;
