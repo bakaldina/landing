@@ -895,13 +895,13 @@ li.main-menu__list:last-child {
     margin-left: 30px;
 }
 .block-6 img {
+    overflow: hidden;
     display: block;
     margin-top: 10px;
     box-shadow: 2px 2px 11px 0px rgba(34, 34, 34, 0.12);
     width: 620px;
     margin-left: 10px;
     margin-top: 50px;
-    overflow: hidden;
 }
 .block-7 {
     height: auto;
