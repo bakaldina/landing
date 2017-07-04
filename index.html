@@ -116,6 +116,11 @@
                 <img src="image/cards.png" alt="">
             </div>
             <h2>Результат поиска на карте</h2>
+            <div class="block-3-mobile">
+                <p class="block-3-mobile-text block-3-mobile-text-1">Чертово корыто</p>
+                <p class="block-3-mobile-text block-3-mobile-text-2">Сухой лог</p>
+                <p class="block-3-mobile-text block-3-mobile-text-3">Черкесское рудное поле</p>
+            </div>
         </div>
     </div>
 
@@ -131,19 +136,28 @@
         </div>
     </div>
 
+    <div class="block-4-mobile">
+            <div class="block-4-title-mobile">
+                <h2>Поиск по статусу</h2>
+                <p>Информация о проведении аукционов и планируемых к лицензированию месторождениях и проявлениях</p>
+            </div>
+    </div>
+
+    <div class="block-4-1-mobile"></div>
+
     <div class="block-5">
         <div class="block-5-item">
             <div class="block-5-left">
                 <h3>Детальная информация об участке</h3>
                 <ul>
                     <li class="selected">
-                        <button class="button button-1" data-toggle-text="рейтинги недропользования">Основная информация</button>   
+                        <button class="button button-1">Основная информация</button>   
                     </li>
                     <li>
-                        <button class="button button-2" data-toggle-text="рейтинг участка недр">Сведения о запасах</button>
+                        <button class="button button-2">Сведения о запасах</button>
                     </li>
                     <li>
-                        <button class="button button-3" data-toggle-text="шкала рейтинга">История участка</button>
+                        <button class="button button-3">История участка</button>
                     </li>
                 </ul>
             </div>
@@ -155,6 +169,36 @@
                     <img src="image/block-5-img-2.png" alt="card">
                 </div>
                 <div class="container-3">
+                    <img src="image/block-5-img-3.png" alt="card">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-5-mobile">
+        <div class="block-5-item-mobile">
+            <div class="block-5-left-mobile">
+                <h3>Детальная <br> информация об участке</h3>
+                <ul>
+                    <li class="selected-mobile">
+                        <button class="button-mobile button-1-mobile">Основная<br> информация</button>   
+                    </li>
+                    <li>
+                        <button class="button-mobile button-2-mobile">Сведения <br> о запасах</button>
+                    </li>
+                    <li>
+                        <button class="button-mobile button-3-mobile">История<br> участка</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="blocks-mobile">
+                <div class="container-1-mobile">
+                    <img src="image/block-img-1-mobile.png" alt="card">
+                </div>
+                <div class="container-2-mobile">
+                    <img src="image/block-5-img-2.png" alt="card">
+                </div>
+                <div class="container-3-mobile">
                     <img src="image/block-5-img-3.png" alt="card">
                 </div>
             </div>
@@ -230,6 +274,13 @@
         </div>
     </div>
 
+    <div class="block-8-mobile">
+        <div class="block-8-text-mobile">
+            <h3>Открытый <br> набор карт</h3>
+            <p>Карты различных масштабов, тематические, геологические карты, космоснимки.</p>
+        </div>
+        <img src="image/block-8-img.png" alt="">
+    </div>
     <script>
 		;(function($D){ 
 			var $button1    = $D.querySelector('.button-1'),
@@ -278,6 +329,56 @@
             $button1.style.background = '#fff';
             $button3.style.color = '#0066CC';
             $button3.style.background = '#efebe4';
+			});
+		})(document);
+
+        ;(function($Q){ 
+			var $button11   = $Q.querySelector('.button-1-mobile'),
+				$container11  = $Q.querySelector('.container-1-mobile'),
+				$button22     = $Q.querySelector('.button-2-mobile'),
+				$container22  = $Q.querySelector('.container-2-mobile'),
+				$button33     = $Q.querySelector('.button-3-mobile'),
+				$container33 = $Q.querySelector('.container-3-mobile');
+
+			$container11.style.display = 'block';
+            $container22.style.display = 'none';
+			$container33.style.display = 'none';
+            $button11.style.borderBottom = '3px solid rgba(0, 153, 255, 1)';
+			$button11.style.color = '#0066CC';
+
+			$button11.addEventListener('click', function(w){
+			$container11.style.display = 'block';
+			$container22.style.display = 'none';
+			$container33.style.display = 'none';
+			$button11.style.color = '#0066CC';
+            $button11.style.borderBottom = '3px solid rgba(0, 153, 255, 1)';
+            $button22.style.color = '#2b87e2';
+            $button22.style.borderBottom = 'none';
+            $button33.style.color = '#2b87e2';
+            $button33.style.borderBottom = 'none';
+			});
+		
+			$button22.addEventListener('click', function(w){
+			$container11.style.display ='none';
+			$container33.style.display = 'none';
+			$container22.style.display ='block';
+			$button11.style.color = '#2b87e2';
+            $button11.style.borderBottom = 'none';
+            $button22.style.color = '#0066CC';
+            $button22.style.borderBottom = '3px solid rgba(0, 153, 255, 1)';
+			$button33.style.color = '#2b87e2';
+            $button33.style.borderBottom = 'none';
+			});
+			$button33.addEventListener('click', function(w){
+			$container11.style.display ='none';
+			$container22.style.display = 'none';
+			$container33.style.display ='block';
+            $button11.style.color = '#2b87e2';
+            $button22.style.borderBottom = 'none';
+            $button22.style.color = '#2b87e2';
+            $button11.style.borderBottom = 'none';
+            $button33.style.color = '#0066CC';
+            $button33.style.borderBottom = '3px solid rgba(0, 153, 255, 1)';
 			});
 		})(document);
     </script>
