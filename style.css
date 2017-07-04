@@ -886,6 +886,7 @@ li.main-menu__list:last-child {
 .block-6-item {
     padding-top: 30px;
     height: 530px;
+    overflow: hidden;
 }
 .block-6 h3 {
     font-size: 20px;
@@ -898,9 +899,9 @@ li.main-menu__list:last-child {
     margin-top: 10px;
     box-shadow: 2px 2px 11px 0px rgba(34, 34, 34, 0.12);
     width: 620px;
-    overflow: hidden;
     margin-left: 10px;
     margin-top: 50px;
+    overflow: hidden;
 }
 .block-7 {
     height: auto;
