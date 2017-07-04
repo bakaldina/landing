@@ -189,6 +189,9 @@ li.right:last-child {
     background-color: rgba(88, 181, 211, 1);
     margin: 0 auto;
 }
+.block-2-table-mobile {
+    display: none;
+}
 .block-2-item {
     max-width: 1000px;
     margin: 0 auto;
@@ -207,9 +210,17 @@ li.right:last-child {
 .block-2-table {
     display: inline-block;
     margin-top: 100px;
+    position: relative;
 }
-.block-2-table img {
-    margin: 0 auto;
+.block-2-table:after {
+    content: '';
+    background: url(./image/arrow_4.png);
+    width: 493px;
+    height: 139px;
+    position: absolute;
+    top: 115%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
 .block-2-arrow img {
     margin: 0 auto;
@@ -668,15 +679,14 @@ li.main-menu__list:last-child {
     font-size: 22px;
     line-height: 30px;
 }
-.block-2-table img {
+.block-2-table-main {
     display: none;
 }
-.block-2-table {
+.block-2-table-mobile {
     display: block;
+}
+.block-2-table {
     margin-top: 30px;
-    background-image: url(image/table-mobile.png);
-    background-repeat: no-repeat;
-    height: 380px;
 }
 
 }
