@@ -700,9 +700,11 @@ li.main-menu__list:last-child {
 .block-2-table-mobile {
     display: block;
     width: 300px;
+    margin: auto;
 }
 .block-2-table {
     margin-top: 30px;
+    width: 100%;
 }
 .block-2-table:after {
     display: none;
@@ -860,8 +862,6 @@ li.main-menu__list:last-child {
     color: #2b87e2;
     line-height: 20px;
     cursor: pointer;
-    margin-left: 30px;
-
 }
 .button-3-mobile {
     padding: 0;
@@ -944,9 +944,10 @@ li.main-menu__list:last-child {
     width: 250px;
 }
 .block-8-mobile img {
-    position: absolute;
+    position: relative;
     left: -90px;
     width: 425px;
+    max-width: 100%;
     overflow: hidden;
 }
 }
