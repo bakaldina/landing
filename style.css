@@ -44,7 +44,7 @@ h1, h2, h3 {
     margin: auto;
     text-align: center;
     background-image: url(image/BG.png);
-    background-position: center -107px;
+    background-size: cover;
 }
 .block-1 .menu {
     width: 100%;
