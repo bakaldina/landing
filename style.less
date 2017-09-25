@@ -7,7 +7,7 @@
 @color_7: #00ffff;
 @color-8: #999995;
 @font_family_1: "PT Sans", sans-serif;
-@font_family_2: "RobotoBold";
+@font_family_2: "RobotoBold"; 
 @font_family_3: "PT Sans Bold", "PT Sans";
 @background_color_1: rgba(11, 20, 61, 0.92);
 @background_color_2: #efebe4;
@@ -21,7 +21,6 @@
 @background_color_10: rgba(247, 244, 240, 1);
 @background_color_11: rgba(32, 47, 96, 1);
 @background_color_12: rgba(38, 57, 72, 1);
-
 @font-face {
 	font-family: "PT Sans";
 	font-style: normal;
@@ -91,23 +90,31 @@ h3 {
             display: flex;
             justify-content: space-around;
             margin: 0;
-                &::before {
-                    content: "NE";
-                    position: absolute;
-                    top: 12px;
-                    left: 10px;
-                    background: url(image/logo_mini.png);
-                    width: 40px;
-                    height: 50px;
-                    box-sizing: border-box;
-                    color: @color_1;
-                    font-weight: bold;
-                    font-size: 16px;
-                    padding: 13px 0px 0 0px;
-                    display: inline-block;
-                    margin-right: 6%;
-                    font-family: @font_family_2;
-                }
+            .main-logo {
+                position: absolute;
+                top: 12px;
+                left: 10px;
+                background: url(image/logo_mini.png);
+                width: 40px;
+                height: 50px;
+            }
+                // &::before {
+                //     content: "NE";
+                //     position: absolute;
+                //     top: 12px;
+                //     left: 10px;
+                //     background: url(image/logo_mini.png);
+                //     width: 40px;
+                //     height: 50px;
+                //     box-sizing: border-box;
+                //     color: @color_1;
+                //     font-weight: bold;
+                //     font-size: 16px;
+                //     padding: 13px 0px 0 0px;
+                //     display: inline-block;
+                //     margin-right: 6%;
+                //     font-family: @font_family_2;
+                // }
                 li {
                     display: inline-flex;
                     text-transform: uppercase;
@@ -303,6 +310,7 @@ h3 {
 	background-image: url(image/map_5.png);
 	margin: 0 auto;
     &_item {
+        position: relative;
         max-width: 1000px;
         margin: 0 auto;
         &-img {
@@ -325,7 +333,55 @@ h3 {
             margin-top: 50px;
         }
         &-mobile {
-            display: none;
+            display: block;
+            position: absolute;
+            display: block;
+            top: 200px;
+            left: 700px;
+            font-weight: 700;
+            font-size: 18px;
+            color: @color_5;
+            &-text-1 {
+                position: relative;
+                left: 30px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -37px;
+                    top: 8px;
+                    background: url(image/block-4-item.png) no-repeat;
+                    width: 26px;
+                    height: 35px;
+                }
+            }
+            &-text-2 {
+                position: relative;
+                left: 100px;
+                top: 50px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -11px;
+                    left: -37px;
+                    background: url(image/block-4-item.png) no-repeat;
+                    width: 26px;
+                    height: 35px;
+                }
+            }
+            &-text-3 {
+                position: relative;
+                left: -20px;
+                top: 80px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -5px;
+                    left: -37px;
+                    background: url(image/block-4-item.png) no-repeat;
+                    width: 26px;
+                    height: 35px;
+                }
+            }
         }
     }
 }
@@ -997,7 +1053,7 @@ h3 {
 
 .block-3 {
     height: 670px;
-    background-image: url(image/map_5-mobile.png);
+    background-image: url(image/map_5.png);
     position: relative;
     h2 {
         position: absolute;

@@ -70,22 +70,13 @@ h3 {
   justify-content: space-around;
   margin: 0;
 }
-.block-1_menu-item ul::before {
-  content: "NE";
+.block-1_menu-item ul .main-logo {
   position: absolute;
   top: 12px;
   left: 10px;
   background: url(image/logo_mini.png);
   width: 40px;
   height: 50px;
-  box-sizing: border-box;
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 13px 0px 0 0px;
-  display: inline-block;
-  margin-right: 6%;
-  font-family: "RobotoBold";
 }
 .block-1_menu-item ul li {
   display: inline-flex;
@@ -265,6 +256,7 @@ h3 {
   margin: 0 auto;
 }
 .block-3_item {
+  position: relative;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -288,7 +280,54 @@ h3 {
   margin-top: 50px;
 }
 .block-3_item-mobile {
-  display: none;
+  position: absolute;
+  display: block;
+  top: 200px;
+  left: 700px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #666666;
+}
+.block-3_item-mobile-text-1 {
+  position: relative;
+  left: 30px;
+}
+.block-3_item-mobile-text-1::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 8px;
+  background: url(image/block-4-item.png) no-repeat;
+  width: 26px;
+  height: 35px;
+}
+.block-3_item-mobile-text-2 {
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+.block-3_item-mobile-text-2::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -37px;
+  background: url(image/block-4-item.png) no-repeat;
+  width: 26px;
+  height: 35px;
+}
+.block-3_item-mobile-text-3 {
+  position: relative;
+  left: -20px;
+  top: 80px;
+}
+.block-3_item-mobile-text-3::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -37px;
+  background: url(image/block-4-item.png) no-repeat;
+  width: 26px;
+  height: 35px;
 }
 /* Блок 4 */
 .block-4 {
@@ -926,7 +965,7 @@ h3 {
   /* Блок 3 моб */
   .block-3 {
     height: 670px;
-    background-image: url(image/map_5-mobile.png);
+    background-image: url(image/map_5.png);
     position: relative;
   }
   .block-3 h2 {
